@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.form{
+    border:1px solid rgba(161, 161, 161, 0.5);
+    border-radius:8px;
+    width: 450px;
+    min-height:400px ;
+    padding:32px;
+}
+.form .logo{
+    user-select: none;
+    height: 75px;
+    display:block;
+    margin: auto;
+    margin-bottom: 0;
+}
+.box{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.form .form-heading{
+    height: 30px;
+    font-weight: 400;
+    font-size:22px;
+    text-align: center;
+    margin:0px 0px 10px 0px;
+}
+.form .head2{
+    font-size:16px;
+}
+.form-grp{
+    margin-top:30px;
+    height:54px;
+    margin-bottom:4px;
+    position:relative;
+}
+.int{
+
+    top:0;
+    left:0;
+    position: absolute;
+    height: 100%;
+    width:98%;
+    background: none;
+    outline:none;
+    border:none;
+    border:1px solid #a1a1a1;
+    padding:16px;
+    border-radius:3px;
+    z-index: 1;
+}
+.form-grp .label{
+    position:absolute;
+    left:13px;
+    top:13px;
+    color:#837d7d;
+    background-color:white;
+    transition:0.2s;
+    padding:0px 6px;
+}
+.int:focus+ .label{
+    font-size:12px;
+    top:-10px;
+    z-index:10;
+    color: #1b66c9;
+}
+.int:focus{
+    border:2px solid #1b66c9;
+}
+.int:not(:focus):valid+label{
+    font-size:12px;
+    top:-10px;
+    z-index:10;
+}
+a{
+    color:#1b66c9;
+    text-decoration:none;
+    font-size:14px;
+    font-style:bolder;
+}
+.par{
+    margin-top:40px;
+    font-size:13px;
+    color: #747272;
+}
+.last{
+    margin-top:50px;
+    margin-bottom:50px;
+    display: flex;
+    justify-content: space-between;
+}
+.last a{
+    font-weight: 400;
+}
+.last .btn{
+    padding:10px 25px;
+    background-color: #2a79e0;
+    border:none;
+    color:white;
+    font-style:bold;
+    border-radius: 3px;
+}
+.last .btn:hover{
+    background-color: #1b66c9;
+}
